@@ -9,7 +9,7 @@ describe("TicketTypeRequestTests", () => {
     expect(() => new TicketTypeRequest(123, 3)).toThrow(TypeError);
     expect(() => new TicketTypeRequest("CAR", 3)).toThrow(TypeError);
   });
-  test("Should not with valid ticket request types", () => {
+  test("Should not throw with valid ticket request types", () => {
     expect(() => new TicketTypeRequest("ADULT", 3)).not.toThrow(TypeError);
     expect(() => new TicketTypeRequest("CHILD", 3)).not.toThrow(TypeError);
     expect(() => new TicketTypeRequest("INFANT", 3)).not.toThrow(TypeError);
